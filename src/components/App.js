@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import axios from 'axios'
-import PostForm from './forms/PostForm'
+//import PostForm from './forms/PostForm'
+import PostForms from './PostForms'
 
 class App extends Component {
 
@@ -22,15 +23,12 @@ class App extends Component {
       })
   }
   render() {
-    let { posts } = this.state
-    if (posts.length == 0) {
-      return <h1 style={{ textAlign: "center" }}> Loading ... </h1>
-    }
+    
     return (
       <div className='container'>
         <div className="row">
           <div className="col-sm-8 offset-sm-2">
-            <PostForm />
+            <PostForms />
           </div>
         </div>
       </div>

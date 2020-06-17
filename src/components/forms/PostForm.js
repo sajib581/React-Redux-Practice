@@ -28,8 +28,7 @@ submitHandeler = (event) => {
 }
 
 changeHandeler = event =>{
-    if(event.target.type == 'checkbox'){
-        console.log(event.target.checked)        
+    if(event.target.type == 'checkbox'){      
         if(event.target.checked){
             this.setState({
                 ...this.state,
